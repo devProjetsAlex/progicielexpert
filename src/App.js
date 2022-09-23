@@ -4,13 +4,17 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 
 import Clients from './client/pages/client';
 import Requests from './requests/pages/requests';
+import Accueil from './accueil/pages/accueil';
 
 const App = () => {
   return ( 
 
   <Router>
     <Switch>
-
+      
+      <Route path='/accueil'>
+        <Accueil/>
+      </Route>
     
       <Route path='/clients' exact>
         <Clients/>
